@@ -1,0 +1,124 @@
+/* src/styles/Upload.css */
+
+.upload-container {
+  background-color: #F9FAFA;
+  color: #222426;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.upload-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222426;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #222426;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4A4A4A;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #222426;
+  background-color: #F9FAFA;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #222426;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px 0;
+  color: #4A4A4A;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.progress-bar {
+  margin: 20px 0;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.upload-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #222426;
+  color: #F9FAFA;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:disabled {
+  background-color: #4A4A4A;
+  cursor: not-allowed;
+}
+
+.upload-button:not(:disabled):hover {
+  background-color: #4A4A4A;
+}
+
+.upload-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(34, 36, 38, 0.3);
+}
+
+@media (max-width: 600px) {
+  .upload-container {
+    padding: 10px;
+  }
+
+  .upload-container h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');

@@ -1,0 +1,107 @@
+/* src/styles/MyVideos.css */
+
+.my-videos-container {
+    background-color: #F9FAFA;
+    color: #222426;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Modern bir yazı tipi, Google Fonts'tan eklenebilir */
+  }
+  
+  .my-videos-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222426;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .video-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #4A4A4A;
+  }
+  
+  .video-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222426;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .video-description {
+    font-size: 0.9rem;
+    color: #4A4A4A;
+    padding: 0 10px 10px;
+    margin: 0;
+  }
+  
+  .connect-wallet-message,
+  .loading-container,
+  .error-message,
+  .no-videos-message {
+    text-align: center;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .connect-wallet-message h2,
+  .loading-container,
+  .error-message,
+  .no-videos-message p {
+    color: #222426;
+  }
+  
+  .upload-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #222426;
+    color: #F9FAFA;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-link:hover {
+    background-color: #4A4A4A;
+    color: #F9FAFA;
+  }
+  
+  /* Responsive tasarım */
+  @media (max-width: 600px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .my-videos-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Google Fonts için (isteğe bağlı) */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');

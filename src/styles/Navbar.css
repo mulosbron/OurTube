@@ -1,0 +1,120 @@
+/* src/styles/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222426;
+  border-bottom: 1px solid #4A4A4A;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #F9FAFA;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-brand a:hover {
+  color: #4A4A4A;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #F9FAFA;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #4A4A4A;
+  color: #F9FAFA;
+}
+
+.wallet-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wallet-address {
+  color: #F9FAFA;
+  font-family: 'Roboto', monospace;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  background-color: #4A4A4A;
+  border-radius: 4px;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #F9FAFA !important;
+  color: #222426 !important;
+  padding: 6px 16px !important;
+  font-weight: 500 !important;
+}
+
+.MuiButton-containedSecondary {
+  background-color: #4A4A4A !important;
+  color: #F9FAFA !important;
+  padding: 6px 16px !important;
+  font-weight: 500 !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #E0E0E0 !important;
+}
+
+.MuiButton-containedSecondary:hover {
+  background-color: #333 !important;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .wallet-section {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-brand a {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');

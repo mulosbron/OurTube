@@ -1,3 +1,17 @@
+# Project Summary
+
+OurTube is a decentralized video sharing platform built on the Arweave blockchain. Users can upload and view their videos using interface. The project leverages Arweave for permanent video storage, ensuring content is censorship-resistant and accessible forever. Key features include video uploading with thumbnails, a responsive video grid, and wallet integration for user authentication.
+
+## Screenshots
+
+Here are some sample thumbnails from videos uploaded to OurTube:
+
+![Test Video Thumbnail](https://5kkrcx2vuzusjue2hzsrfp7hksh43sd43yed37gr7skz2wlc7tva.arweave.net/6pURX1WmaSTQmj5lEr_nVI_NyHzeCD380fyVnVli_Oo)
+
+![Test2 Video Thumbnail](https://mhxz6cn446ct3ztnvrgbjsoamgqeyrcboaasmb3x6nmyh7bcsmxq.arweave.net/Ye-fCbznhT3mbaxMFMnAYaBMREFwASYHd_NZg_wiky8)
+
+![Test3 Video Thumbnail](https://ykqfc2houpzn22ft2mwelr4u64cthyrcge7qncdxgakzae2rimba.arweave.net/wqBRaO6j8t1os9MsRceU9wUz4iIxPwaIdzAVkBNRQwI)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

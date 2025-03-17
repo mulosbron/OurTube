@@ -1,0 +1,85 @@
+/* src/styles/VideoCard.css */
+
+.video-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #4A4A4A;
+    display: block;
+  }
+  
+  .video-thumbnail-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #4A4A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #4A4A4A;
+  }
+  
+  .video-thumbnail-placeholder span {
+    color: #F9FAFA;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .video-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222426;
+    padding: 10px 10px 5px;
+    margin: 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Başlık maksimum 2 satır olacak */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .video-description {
+    font-size: 0.9rem;
+    color: #4A4A4A;
+    padding: 0 10px 10px;
+    margin: 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Açıklama maksimum 2 satır olacak */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @media (max-width: 600px) {
+    .video-card {
+      border-radius: 6px;
+    }
+  
+    .video-thumbnail,
+    .video-thumbnail-placeholder {
+      height: 120px;
+    }
+  
+    .video-title {
+      font-size: 1rem;
+      padding: 8px 8px 4px;
+    }
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');

@@ -1,0 +1,91 @@
+/* src/styles/VideoPlayer.css */
+
+.video-player-container {
+    background-color: #F9FAFA;
+    color: #222426;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .video-player {
+    width: 100%;
+    max-height: 720px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+  }
+  
+  .video-info {
+    padding: 20px 0;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .video-info h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222426;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .video-info p {
+    font-size: 1rem;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Açıklama maksimum 3 satır */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .video-meta {
+    font-size: 0.9rem;
+    color: #4A4A4A;
+    padding: 10px;
+    background-color: #F9FAFA;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .video-meta span {
+    word-break: break-all;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: #222426;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .video-player-container {
+      padding: 10px;
+    }
+  
+    .video-player {
+      max-height: 400px;
+    }
+  
+    .video-info h1 {
+      font-size: 1.5rem;
+    }
+  
+    .video-info p {
+      font-size: 0.9rem;
+    }
+  
+    .video-meta {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
