@@ -1,84 +1,104 @@
-# Project Summary
+# OurTube
 
-OurTube is a decentralized video sharing platform built on the Arweave blockchain. Users can upload and view their videos using interface. The project leverages Arweave for permanent video storage, ensuring content is censorship-resistant and accessible forever. Key features include video uploading with thumbnails, a responsive video grid, and wallet integration for user authentication.
+## Overview
+A decentralized video sharing platform built on the Arweave blockchain that provides permanent, censorship-resistant video storage. Users can upload and share videos using their Arweave wallet, ensuring content remains accessible forever without the risk of centralized censorship.
+
+## Purpose
+To create a Web3 alternative to traditional video platforms that offers true content ownership and permanence. OurTube leverages blockchain technology to ensure videos are stored permanently and distributed without central points of failure.
+
+### Key Objectives:
+- Provide permanent video storage using Arweave
+- Enable decentralized video sharing without censorship
+- Create a user-friendly interface for blockchain-based content
+- Maintain user ownership of uploaded content
+- Build a sustainable platform through blockchain economics
+
+## Scope
+
+### Technology Stack:
+- **Frontend**: React 19.0.0, React Router DOM 7.3.0
+- **UI Framework**: Material-UI 6.4.7
+- **Blockchain**: Arweave, ArConnect Wallet
+- **Storage**: Permanent blockchain storage
+- **GraphQL**: Arweave GraphQL for data queries
+- **Styling**: CSS Modules, Google Fonts
+
+### Project Features:
+- Wallet-based authentication with ArConnect
+- Video upload with thumbnail support
+- Permanent decentralized storage
+- Video grid with responsive design
+- User video management
+- Progress tracking during uploads
+- Video playback with metadata display
+- Transaction-based content addressing
+
+## Implementation
+
+### Project Structure:
+```
+OurTube/
+├── public/
+│   ├── index.html                 # HTML template
+│   ├── manifest.json              # PWA manifest
+│   └── favicon.ico               # Favicon
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js              # Navigation component
+│   │   └── VideoCard.js           # Video preview card
+│   ├── hooks/
+│   │   └── useArConnect.js        # Arweave wallet hook
+│   ├── pages/
+│   │   ├── Home.js                # Video gallery
+│   │   ├── Upload.js              # Video upload interface
+│   │   ├── VideoPlayer.js         # Video playback
+│   │   └── MyVideos.js           # User's uploaded videos
+│   ├── styles/
+│   │   ├── Home.css               # Home page styles
+│   │   ├── Upload.css             # Upload page styles
+│   │   ├── VideoPlayer.css        # Video player styles
+│   │   ├── MyVideos.css           # My videos page styles
+│   │   ├── Navbar.css             # Navigation styles
+│   │   └── VideoCard.css          # Video card styles
+│   ├── utils/
+│   │   ├── arweave.js            # Arweave utilities
+│   │   └── graphql.js            # GraphQL queries
+│   ├── App.js                     # Main application
+│   ├── App.css                    # Global app styles
+│   ├── index.js                   # Entry point
+│   ├── index.css                  # Global styles
+│   └── logo.svg                   # React logo
+├── .gitignore                     # Git ignore file
+├── package.json                   # Dependencies and scripts
+├── package-lock.json              # Lockfile
+└── README.md                      # Project documentation
+```
+
+### Features:
+1. **Wallet Connection**: ArConnect integration for user authentication
+2. **Video Upload**: Direct upload to Arweave with progress tracking
+3. **Video Viewing**: Stream videos directly from Arweave network
+4. **Personal Library**: View and manage your uploaded content
+5. **Responsive Design**: Mobile-friendly interface
+
+### Development Process:
+1. **Setup**: React app initialization with Create React App
+2. **Wallet Integration**: ArConnect wallet connection implementation
+3. **Upload System**: File handling and Arweave transaction creation
+4. **UI/UX Design**: Responsive interface with Material-UI
+5. **Data Management**: GraphQL queries for video metadata
+
+### Getting Started:
+
+1. Install dependencies: `npm install`
+2. Start development server: `npm start`
+3. Connect your ArConnect wallet
+4. Start uploading and viewing videos!
 
 ## Screenshots
 
-Here are some sample thumbnails from videos uploaded to OurTube:
+Sample video thumbnails from OurTube:
 
-![Test Video Thumbnail](https://5kkrcx2vuzusjue2hzsrfp7hksh43sd43yed37gr7skz2wlc7tva.arweave.net/6pURX1WmaSTQmj5lEr_nVI_NyHzeCD380fyVnVli_Oo)
-
-![Test2 Video Thumbnail](https://mhxz6cn446ct3ztnvrgbjsoamgqeyrcboaasmb3x6nmyh7bcsmxq.arweave.net/Ye-fCbznhT3mbaxMFMnAYaBMREFwASYHd_NZg_wiky8)
-
-![Test3 Video Thumbnail](https://ykqfc2houpzn22ft2mwelr4u64cthyrcge7qncdxgakzae2rimba.arweave.net/wqBRaO6j8t1os9MsRceU9wUz4iIxPwaIdzAVkBNRQwI)
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://5kkrcx2vuzusjue2hzsrfp7hksh43sd43yed37gr7skz2wlc7tva.arweave.net/6pURX1WmaSTQmj5lEr_nVI_NyHzeCD380fyVnVli_Oo" width="300" alt="Test Video Thumbnail">
+<img src="https://mhxz6cn446ct3ztnvrgbjsoamgqeyrcboaasmb3x6nmyh7bcsmxq.arweave.net/Ye-fCbznhT3mbaxMFMnAYaBMREFwASYHd_NZg_wiky8" width="300" alt="Test2 Video Thumbnail">
+<img src="https://ykqfc2houpzn22ft2mwelr4u64cthyrcge7qncdxgakzae2rimba.arweave.net/wqBRaO6j8t1os9MsRceU9wUz4iIxPwaIdzAVkBNRQwI" width="300" alt="Test3 Video Thumbnail">
