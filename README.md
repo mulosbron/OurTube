@@ -6,13 +6,6 @@ A decentralized video sharing platform built on the Arweave blockchain that prov
 ## Purpose
 To create a Web3 alternative to traditional video platforms that offers true content ownership and permanence. OurTube leverages blockchain technology to ensure videos are stored permanently and distributed without central points of failure.
 
-### Key Objectives:
-- Provide permanent video storage using Arweave
-- Enable decentralized video sharing without censorship
-- Create a user-friendly interface for blockchain-based content
-- Maintain user ownership of uploaded content
-- Build a sustainable platform through blockchain economics
-
 ## Scope
 
 ### Technology Stack:
@@ -22,16 +15,6 @@ To create a Web3 alternative to traditional video platforms that offers true con
 - **Storage**: Permanent blockchain storage
 - **GraphQL**: Arweave GraphQL for data queries
 - **Styling**: CSS Modules, Google Fonts
-
-### Project Features:
-- Wallet-based authentication with ArConnect
-- Video upload with thumbnail support
-- Permanent decentralized storage
-- Video grid with responsive design
-- User video management
-- Progress tracking during uploads
-- Video playback with metadata display
-- Transaction-based content addressing
 
 ## Implementation
 
@@ -74,20 +57,6 @@ OurTube/
 └── README.md                      # Project documentation
 ```
 
-### Features:
-1. **Wallet Connection**: ArConnect integration for user authentication
-2. **Video Upload**: Direct upload to Arweave with progress tracking
-3. **Video Viewing**: Stream videos directly from Arweave network
-4. **Personal Library**: View and manage your uploaded content
-5. **Responsive Design**: Mobile-friendly interface
-
-### Development Process:
-1. **Setup**: React app initialization with Create React App
-2. **Wallet Integration**: ArConnect wallet connection implementation
-3. **Upload System**: File handling and Arweave transaction creation
-4. **UI/UX Design**: Responsive interface with Material-UI
-5. **Data Management**: GraphQL queries for video metadata
-
 ### Getting Started:
 
 1. Install dependencies: `npm install`
@@ -99,6 +68,6 @@ OurTube/
 
 Sample video thumbnails from OurTube:
 
-<img src="https://5kkrcx2vuzusjue2hzsrfp7hksh43sd43yed37gr7skz2wlc7tva.arweave.net/6pURX1WmaSTQmj5lEr_nVI_NyHzeCD380fyVnVli_Oo" width="300" alt="Test Video Thumbnail">
-<img src="https://mhxz6cn446ct3ztnvrgbjsoamgqeyrcboaasmb3x6nmyh7bcsmxq.arweave.net/Ye-fCbznhT3mbaxMFMnAYaBMREFwASYHd_NZg_wiky8" width="300" alt="Test2 Video Thumbnail">
-<img src="https://ykqfc2houpzn22ft2mwelr4u64cthyrcge7qncdxgakzae2rimba.arweave.net/wqBRaO6j8t1os9MsRceU9wUz4iIxPwaIdzAVkBNRQwI" width="300" alt="Test3 Video Thumbnail">
+<img src="https://5kkrcx2vuzusjue2hzsrfp7hksh43sd43yed37gr7skz2wlc7tva.arweave.net/6pURX1WmaSTQmj5lEr_nVI_NyHzeCD380fyVnVli_Oo" width="750" alt="Test Video Thumbnail">
+<img src="https://mhxz6cn446ct3ztnvrgbjsoamgqeyrcboaasmb3x6nmyh7bcsmxq.arweave.net/Ye-fCbznhT3mbaxMFMnAYaBMREFwASYHd_NZg_wiky8" width="750" alt="Test2 Video Thumbnail">
+<img src="https://ykqfc2houpzn22ft2mwelr4u64cthyrcge7qncdxgakzae2rimba.arweave.net/wqBRaO6j8t1os9MsRceU9wUz4iIxPwaIdzAVkBNRQwI" width="750" alt="Test3 Video Thumbnail">
